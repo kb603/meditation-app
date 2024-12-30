@@ -1,48 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { MobileMenu } from "@/components/mobile-menu";
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Navigation Bar */}
-      <nav className="bg-white shadow-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
-            <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="text-2xl font-bold text-blue-600">
-                MindfulMe
-              </Link>
-            </div>
-            <div className="hidden md:flex items-center">
-              <Link
-                href="/about"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2"
-              >
-                Meditation Library
-              </Link>
-              <Link
-                href="/about"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2"
-              >
-                About
-              </Link>
-              <Link
-                href="/features"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2"
-              >
-                Features
-              </Link>
-              <Button asChild className="ml-4">
-                <Link href="/login">Get Started</Link>
-              </Button>
-            </div>
-            <MobileMenu />
-          </div>
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-blue-100 to-white py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -72,7 +34,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Benefits Section */}
       <section className="py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -122,7 +83,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Call to Action */}
       <section className="bg-blue-600 py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -143,7 +103,6 @@ export default function LandingPage() {
           </Button>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="bg-gray-100 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
